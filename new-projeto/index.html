@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ski Rent</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="logoContent">
+        <h2 id="logoText">SKI RENT</h2>
+    </div>
+
+    <form style="width: 100%" action="recibo.php" onsubmit="return validateForm(this)">
+
+        <table id="rentShop">
+            <thead>
+                <h2 class="title">STORE</h2>
+            </thead>
+            <br>
+        </table>
+        <p>
+            <label for="pay">Débito desconto 10% </label>
+            <input name="pay" type="radio" value="debito">
+    
+            <label for="pay">Crédito desconto 5%</label>
+            <input name="pay" type="radio" value="credito">
+        </p>
+        <br>
+        <p>
+            <label for="username">Nome</label>
+            <input type="text" name="username" value="">
+            <button type="submit">Rent</button>
+        </p>
+        <br><br><br>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
